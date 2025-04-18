@@ -28,7 +28,7 @@ hello-java-maven/
 
 ## 💻 Step-by-Step Instructions
 
-### 1️⃣ Create the Java App
+###  Create the Java App
 
 File: `src/main/java/HelloWorld.java`
 
@@ -43,7 +43,7 @@ public class HelloWorld {
 
 - docker run -p 8080:8080 jenkins/jenkins:lts
 
-### 4️⃣ Set up Maven in Jenkins
+###  Set up Maven in Jenkins
 - Go to: Manage Jenkins → Global Tool Configuration
 
 - Under Maven, click Add Maven
@@ -52,7 +52,7 @@ public class HelloWorld {
 
 - Let Jenkins install it automatically
 
-### 5️⃣ Create Jenkins Freestyle Job
+###  Create Jenkins Freestyle Job
 - Go to Dashboard → New Item → Freestyle project
 
 - Name: hello-java-maven
@@ -61,10 +61,10 @@ public class HelloWorld {
   Add build step → Invoke top-level Maven targets
   Set Goals to: clean package
 
-###6️⃣ Upload or Pull Java Code
+###  Upload or Pull Java Code
 - Clone from GitHub 
 
-###8️⃣ Run Java Program in Jenkins
+###  Run Java Program in Jenkins
 - Execute shell
   cd $WORKSPACE
 java -cp target/hello-1.0.jar HelloWorld
